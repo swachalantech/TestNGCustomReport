@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true" thread-count="2">
+	<listeners>
+		<listener class-name="com.test.base.WebDriverListener"></listener>
+	</listeners>
+	<test name="Test">
+	    <parameter name="QAOwner" value="TestUser_1"></parameter>
+	    <parameter name="Language" value="English"></parameter>
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="recording" value="false" />
+		<parameter name="screenShotFlag" value="true" />
+		<classes>
+			<class name="com.testcases.TC_001" />
+			<class name="com.testcases.TC_002" />
+			<class name="com.testcases.TC_003" />
+			<class name="com.testcases.TC_004" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
